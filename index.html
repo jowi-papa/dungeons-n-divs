@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dungeons and Divs!</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class='title'>Dungeons and Divs</h1>
+      <div id="storyboard"></div>
+      <div id="loader" class="loader">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" stroke="none" fill="gold">
+            <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="12" cy="12" r="8" stroke="none" fill="white">
+            <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="1s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="center">
+        <input class="vw" type="text" value="" id="prompt" placeholder="What kind of campaign would you like?"/>
+        <button class="vw" id="play">Play</button>
+      </div>
+    </div>
+    <script type="module" src="/src/renderer.js"></script>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
